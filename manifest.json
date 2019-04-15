@@ -1,0 +1,21 @@
+{
+  "name": "Google Play Music MP3 Replacer",
+  "description": "Delete '.mp3' from song title",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "js": ["js/gpm-replacer.js", "libs/jquery-3.3.1.js"],
+      "css": [],
+      "matches": ["https://play.google.com/music/*"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "imgs/chikan16.png",
+      "48": "imgs/chikan48.png",
+      "128": "imgs/chikan128.png"
+    },
+    "default_title": "gpm-replacer"
+  },
+  "manifest_version": 2
+}
